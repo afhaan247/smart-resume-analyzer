@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:8000/analyze";
+const API_URL = "https://fearless-empathy-production.up.railway.app/analyze";
+
 
 export async function analyzeResume(file, jobDescription) {
   const formData = new FormData();
