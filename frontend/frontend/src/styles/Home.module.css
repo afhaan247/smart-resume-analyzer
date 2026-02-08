@@ -1,0 +1,147 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cfd8b9; 
+}
+
+
+.card {
+  background: #fafbfb;
+  padding: 35px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.title {
+  font-size: 1.9rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4967c4;
+  color: white;
+  cursor: pointer;
+}
+.button:disabled {
+  background-color: #c7d2fe;
+  color: #f5f3f3;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+
+.selected {
+  font-size: 0.85rem;
+  margin-top: -8px;   /* 👈 pulls it closer to upload box */
+  margin-bottom: 16px;
+  color: #444;
+}
+
+/* Job Description textarea */
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  resize: vertical;
+  font-size: 0.95rem;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Button disabled clarity */
+.button:disabled {
+  background-color: #c7d2fe;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 20px;
+    margin: 16px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .textarea {
+    min-height: 100px;
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+.splitContainer {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.leftPanel {
+  flex: 3;                 /* ~60% */
+  background: #ffffff;
+  padding: 40px;
+}
+.rightPanel {
+  flex: 2;                 /* ~40% */
+  background: linear-gradient(
+    135deg,
+    #3b82f6,
+    #22c55e
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .splitContainer {
+    flex-direction: column;
+  }
+
+  .rightPanel {
+    display: none;
+  }
+
+  .leftPanel {
+    padding: 28px 20px;
+  }
+}
+.error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 8px 0 12px;
+}
